@@ -1,0 +1,101 @@
+//variables for the DEFAULT theme
+
+:root {
+  //general
+
+  --background-image: #{$light-animation-background};
+  --resume-dates: #{$date-color-light};
+  --left-shadow: #{$light-shadow-left};
+  --rigt-shadow: #{$light-shadow-right};
+  --heading-circle: #{$heading-circle-light};
+  --icons-circle: #{$icons-circle-light};
+  --resume-position-color: #{$dark-gray};
+  --nav-underline: #{$underline-light};
+  --avatar-border: #{$main-black-text};
+  --avatar-shadow: #{$light-shadow-left};
+  --left: #{$left-light};
+  --content-visible: #{$content-none};
+
+  //color
+  --mode-color: #{$main-black-text};
+  --companyName-color: #{$light-company-color};
+  --underline-color: #{$underline-light};
+  --web-color: #{$main-green-light};
+  --colorBorder: #{$date-text};
+  --color-page: #{$card-light};
+  --heading-color: #{$main-black-text};
+  --text-color: #{$text-color-light};
+  --gradient-hover: #{$test};
+  --hover-projects: #{rgb(255, 255, 255)};
+
+  //font weight
+  --myName-weight: #{$normal-weight};
+  --subtitle-weight: #{$normal-weight};
+  --mode-weight: #{$medium-weight};
+  --footer-text-weight: #{$medium-weight};
+  --paragraph-weight: #{$normal-weight};
+  --companyName-weight: #{$normal-weight};
+  --listDetails-weight: #{$semibold-weight};
+  --listValue-weight: #{$normal-weight};
+  --salut-weight: #{$semibold-weight};
+  --heading-weight: #{$semibold-weight};
+  --resume-subheadings-weight: #{$medium-weight};
+  --resume-position-weight: #{$medium-weight};
+  --projectName-weight: #{$normal-weight};
+  --hover-font-projects: #{$normal-weight};
+}
+
+//variables for the DARK theme
+
+html[data-theme="dark"] {
+  //general
+  --resume-dates: #{$date-color};
+  --left-shadow: #{$dark-shadow-left};
+  --rigt-shadow: #{$dark-shadow-right};
+  --heading-circle: #{$heading-circle-dark};
+  --icons-circle: #{$icons-circle-dark};
+  --nav-underline: #{$underline-dark};
+  --avatar-border: #{$card-black};
+  --avatar-shadow: #{$avatar-shadow};
+  --left: #{$left-dark};
+  --content-none: #{$content-none};
+  --content-visible: #{$content-visible};
+
+  //colors
+  --color-page: #{$card-black};
+  --heading-color: #{$main-white-text};
+  --text-color: #{$text-color-dark};
+  --background-image: #{$animation-background};
+  --colorBorder: #{$light-green};
+  --web-color: #{$main-green};
+  --companyName-color: #{$dark-company-color};
+  --underline-color: #{$underline-dark};
+  --resume-position-color: #{$main-white-text};
+  --mode-color: #{$main-white-text};
+  --gradient-hover: #{$test};
+  --hover-projects: #{white};
+
+  //font weight
+  --heading-weight: #{$medium-weight};
+  --resume-subheadings-weight: #{$normal-weight};
+  --resume-position-weight: #{$normal-weight};
+  --footer-text-weight: #{$normal-weight};
+  --paragraph-weight: #{$light-weight};
+  --myName-weight: #{$light-weight};
+  --subtitle-weight: #{$light-weight};
+  --mode-weight: #{$medium-weight};
+  --companyName-weight: #{$light-weight};
+  --listDetails-weight: #{$normal-weight};
+  --listValue-weight: #{$light-weight};
+  --salut-weight: #{$normal-weight};
+  --projectName-weight: #{$light-weight};
+  --hover-font-projects: #{$light-weight};
+}
+
+// html.transition,
+// html.transition *,
+// html.transition *:before,
+// html.transition *:after {
+//   transition: all 750ms !important;
+//   transition-delay: 0 !important;
+// }

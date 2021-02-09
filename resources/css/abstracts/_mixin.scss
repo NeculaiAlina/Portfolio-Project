@@ -1,0 +1,39 @@
+@mixin flex($content, $item, $direction) {
+  display: flex;
+  justify-content: $content;
+  align-items: $item;
+  flex-direction: $direction;
+}
+
+@mixin menu($marginTop) {
+  display: flex;
+  background-color: var(--color-page);
+  border-radius: 5px 5px 5px 5px;
+  height: 46px;
+  ul {
+    height: 46px;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    width: 86.5vw;
+    margin-right: $marginTop;
+
+    li {
+      width: 100%;
+    }
+    .profile {
+      padding: 0rem;
+      a {
+        font-size: 1rem;
+        .link {
+          font-size: 0.55rem;
+          margin-top: -0.39rem;
+        }
+        .icon {
+          margin-top: -0.39rem;
+          font-size: 1.2rem;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}

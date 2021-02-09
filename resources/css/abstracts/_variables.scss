@@ -1,0 +1,103 @@
+//general variables
+$hairline-weight: 100;
+$thin-weight: 200;
+$light-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
+
+$transparent: transparent;
+$dark-gray: rgb(54, 54, 54);
+$content-none: none;
+$content-visible: visible;
+
+//breakpoints
+$mobileLmax: 425px;
+$mobileLmin: 375px;
+
+//  color variables for dark mode
+
+$main-white-text: #ffffffd9; // for headings and subheadings
+$text-color-dark: #ffffffa1; // for text
+$card-black: #31313a; // background colour
+$main-green: #53f6c8da; // hovers and headings
+$light-green: #42c29e; // coloured cv date border
+// $main-green: #78cc6d;
+// $light-green: #78cc6d;
+$date-color: #666666; // cv dates
+$animation-background: linear-gradient(
+  to bottom right,
+  #17171b 0%,
+  #28282f 100%
+); // body gradient animation colour
+$dark-shadow-left: rgba(49, 49, 58, 0.29);
+$dark-shadow-right: rgba(37, 26, 26, 0.29);
+$dark-company-color: #ffffff8c;
+$underline-dark: radial-gradient(
+  ellipse at center,
+  rgba(97, 97, 97, 0.603) 0%,
+  rgba(255, 255, 255, 0) 80%
+);
+$heading-circle-dark: linear-gradient(
+  to left,
+  rgba(240, 241, 241, 0),
+  rgba(83, 246, 200, 72%)
+);
+$icons-circle-dark: linear-gradient(
+  to left,
+  rgba(247, 247, 247, 0),
+  rgba(83, 246, 200, 0.3)
+);
+$avatar-shadow: linear-gradient(
+  135deg,
+  rgba(83, 246, 200, 0.4) 0%,
+  rgba(120, 204, 109, 0.01) 100%
+);
+$left-dark: 20px;
+$hover-gradient: linear-gradient(
+  to bottom,
+  rgba(83, 246, 200, 1),
+  rgba(255, 0, 0, 0)
+);
+// light mode
+
+$main-black-text: #494949; // for headings and subheadings
+$text-color-light: #646464; // for text
+$card-light: #ffffff; // background colour
+$main-green-light: #4c7753; // hovers and headings
+$light-animation-background: linear-gradient(
+  to bottom right,
+  #85898a 0%,
+  #e5e6e8 100%
+);
+$date-color-light: #cccccc; // cv dates
+$date-text: #06553d; // coloured cv date border
+$light-shadow-left: rgba(76, 119, 83, 0.4);
+$light-shadow-right: rgba(187, 186, 186, 0.267);
+$light-company-color: #868686;
+$underline-light: radial-gradient(
+  ellipse at top,
+  #c7c7c7ee 0%,
+  rgba(255, 255, 255, 0.74) 80%
+);
+$heading-circle-light: linear-gradient(
+  to left,
+  rgba(246, 250, 248, 0),
+  rgba(13, 124, 93, 0.836)
+);
+$icons-circle-light: linear-gradient(
+  to left,
+  rgba(236, 238, 236, 0),
+  rgba(9, 129, 95, 0.411)
+);
+$left-light: 18px;
+$hover-gradient-light: linear-gradient(
+  to bottom,
+  rgba(76, 119, 83, 1),
+  rgba(255, 0, 0, 0)
+);
+
+$test: linear-gradient(to bottom, rgba(76, 119, 83, 1), rgba(255, 0, 0, 0));

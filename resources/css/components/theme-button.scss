@@ -1,0 +1,83 @@
+//Change mode theme button
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.label {
+  background-color: var(--color-page);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  height: 60px;
+  width: 75px;
+
+  .fa-moon {
+    font-size: 0.9rem;
+    margin-top: -0.1rem;
+  }
+
+  .ball {
+    position: absolute;
+    top: 18px;
+    height: 18px;
+    width: 20px;
+    left: var(--left);
+  }
+  //media for small phones to L phones
+  @include media("<=500px") {
+    // margin-right: 0.5rem;
+    border-radius: 5px 0px 0px 5px;
+    width: 46px;
+    // height: 46px;
+    background: none;
+    font-size: 0.57rem;
+    font-weight: 500;
+
+    .fa-moon {
+      width: 13px;
+      margin-top: -6px;
+      margin-left: 3.5px;
+      margin-right: 2rem;
+      color: rgb(216, 198, 35);
+    }
+
+    .ball {
+      margin-top: 7.9px;
+      margin-left: -0.1rem;
+      // background-color: grey;
+    }
+  }
+}
+
+.mode-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7px;
+  // padding: 15px 0px;
+  font-size: 14px;
+  color: var(--heading-color);
+  text-transform: uppercase;
+}
+
+.ball::before {
+  content: "on";
+  position: absolute;
+  z-index: 5;
+  color: var(--heading-color);
+  display: var(--content-visible);
+}
+
+.ball::after {
+  content: "off";
+  position: absolute;
+  z-index: 5;
+  color: var(--heading-color);
+  display: var(--content-none);
+}

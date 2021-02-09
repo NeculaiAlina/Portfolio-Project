@@ -1,0 +1,99 @@
+.right-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  // display: block;
+  // border: solid red;
+  background-color: var(--color-page);
+
+  &::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    width: 4%;
+    height: 100%;
+    margin-left: -37px;
+    box-shadow: 12px 0px 12px 2px var(--rigt-shadow);
+  }
+
+  .first-word::before {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 30px;
+    width: 32px;
+    height: 32px;
+    background-image: var(--heading-circle);
+    border-radius: 50%;
+    z-index: 5;
+    opacity: 0.4;
+  }
+
+  @include media(">=1024px", "<desktop") {
+    height: 38rem;
+    width: 40rem;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /////>desktop
+  @include media(">=desktop") {
+    background-color: var(--color-page);
+    z-index: -1;
+    position: relative;
+    overflow-x: hidden;
+    width: 46rem;
+    height: 38.3rem;
+    // background-color: var(--page);
+    background-color: var(--color-page);
+    z-index: -1;
+    &::after {
+      content: "";
+      // background-color: var(--color-page);
+      color: red;
+      position: absolute;
+      z-index: 200;
+      width: 99%;
+      height: 1.8rem;
+    }
+
+    .bottom::before {
+      content: "";
+      // background-color: var(--color-page);
+      color: red;
+      position: absolute;
+      z-index: 20;
+      width: 99%;
+      height: 1.7rem;
+      margin-top: 79.6%;
+      transform: rotate(180deg);
+    }
+
+    .titles {
+      font-size: 20px;
+      font-weight: var(--heading-weight);
+      padding: 25px 30px 30px 30px;
+
+      .first-word {
+        color: var(--web-color);
+      }
+      .words {
+        color: var(--heading-color);
+      }
+    }
+
+    .first-word::before {
+      content: "";
+      position: absolute;
+      left: 17px;
+      top: 35px;
+      width: 32px;
+      height: 32px;
+      background-image: var(--heading-circle);
+      border-radius: 50%;
+      z-index: 5;
+      opacity: 0.4;
+    }
+  }
+}
