@@ -7,12 +7,13 @@
 .contact {
   display: none;
   background-color: var(--color-page);
+  margin-left: 20px;
 
   .map {
-    margin: 1.5rem 1.88rem 0px 1.88rem;
+    margin: 1.5rem 1.88rem 0px 0.5rem;
 
     iframe {
-      width: 100%;
+      width: 110%;
       height: 250px;
     }
   }
